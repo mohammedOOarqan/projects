@@ -1,67 +1,34 @@
-# CyberDefenders - [Lab Name]
+# CyberDefenders - [WebStrike]
+  
+[the link to the labe](https://cyberdefenders.org/blueteam-ctf-challenges/webstrike/)
 
-- **Difficulty:** [Easy / Medium / Hard]  
-- **Category:** [DFIR / Threat Hunting / Windows Logs / PCAP Analysis / Malware Analysis]  
-- **Date:** [YYYY-MM-DD]  
-
+ 
 ---
 
 ## 🧠 Objective
 
-[Briefly state the goal of the lab. Example: Investigate suspicious activity in Windows logs to identify how a system was compromised.]
+know the sorce of the attack and the name of the file the attacker was trying to get
 
 ---
 
 ## 🛠️ Tools Used
 
-- [Example: Event Viewer]
-- [Example: Wireshark]
-- [Example: Sigma rules + HELK]
-- [Example: CyberChef]
+- [Wireshark]
 
 ---
 
 ## 📜 Summary of Tasks
 
-| # | Task Description | Answer / Flag |
-|---|------------------|----------------|
-| 1 | What was the attacker's IP address? | `192.168.1.100` |
-| 2 | What exploit was used? | `EternalBlue (MS17-010)` |
-| 3 | What file did the attacker drop? | `shell.exe` |
 
-_(Replace this table with only questions you're allowed to share publicly if the lab is not open-solution-friendly)_
 
----
+1. [you will open the pcap file and will notice two primary ip addresses one for the attacker and the other for the server](images.img1.png)
+2. [put the ip in ipgeolocation website to figure from where the attack happened](images.img2.png)
+3. [open the http stream to know the user-Agent of the attacker](images.img3.png)
+4. [scroll in the http request and you will find that one of the post request he was sending was succesfull this is the name of the webshell uploaded](images.img4.png)
+5. [in the same http request in the body you can see the code of the webshell and what ip address and port it is trying to connect to](images.img5.png)
+6. [open the tcp stream of the request from the server on the ip and port listed in the webshell and you will find a code that trying to send the passwd file](images.img6.png)
 
-## 📝 Key Observations
 
-- The attacker used [protocol/tool] to [behavior observed].
-- Lateral movement detected from [host A] to [host B].
-- Suspicious file: `C:\Users\Public\shell.exe` with hash `[...]`.
-
----
-
-## 🖼️ Screenshots
-
-> Include screenshots for key findings if relevant.
-
----
-
-## 💡 Lessons Learned
-
-- Always monitor for suspicious parent-child process chains.
-- Logging PowerShell commands can help in early detection.
-- Consider enabling command line auditing and logging.
-
----
-
-## 📂 Files (optional)
-
-- `/screenshots/`
-- `/notes/`
-- `/exports/`
-
----
 
 ## 📚 References
 
