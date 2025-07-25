@@ -1,15 +1,25 @@
-# The vulnerability:
+# Hack The Box - [Meow]
 
-  misconfigeration in the ftp port
+- **Difficulty:** Easy
+- **Category:** Misconfiguration
 
+---
+
+## 🔍 Vulnerability
+
+Misconfiguration in the **FTP** service allowed anonymous login and access to sensitive files.
 
 ---
 
 ## 🛠️ Tools Used
 
-- Nmap
+- `nmap`
 
 ---
 
+## 📜 Steps to Exploit
 
+### 1. Nmap Scan
 
+```bash
+nmap -sV -sC -oN nmap.txt x.x.x.x
