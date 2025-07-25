@@ -23,7 +23,7 @@ Misconfiguration in the **Telnet** service allowed unauthenticated login as `roo
 
 > Below are the steps with screenshots included.
 
-1. [Ping to check connectivity](./images/img1.png)
+1. ![Ping to check connectivity](./images/img1.png)
 
 2. [Nmap scan reveals open Telnet port](./images/img2.png)
 
