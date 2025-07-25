@@ -1,25 +1,45 @@
-# Hack The Box - [Meow]
+# Hack The Box - Meow
 
-- **Difficulty:** Easy
-- **Category:** Misconfiguration
+- **Difficulty:** Easy  
+- **Category:** Misconfiguration  
 
 ---
 
 ## 🔍 Vulnerability
 
-Misconfiguration in the **FTP** service allowed anonymous login and access to sensitive files.
+Misconfiguration in the **Telnet** service allowed unauthenticated login as `root`.
 
 ---
 
 ## 🛠️ Tools Used
 
+- `ping`
 - `nmap`
+- `telnet`
 
 ---
 
-## 📜 Steps to Exploit
+## 📸 Screenshots
 
-1. ping the machine to ensure that you can reach it
-2. scan the machine for the open ports using nmap
-3. connect to ftp port using telnet
-4. login using root as the admin and leave the password black
+> Below are the steps with screenshots included.
+
+1. Ping to check connectivity  
+   ![Ping Screenshot](./images/img1.png)
+
+2. Nmap scan reveals open Telnet port  
+   ![Nmap Scan](./images/img2.png)
+
+3. Telnet login as root (no password)  
+   ![Telnet Login](./images/img3.png)
+
+4. Flag extraction  
+   ![Flag Screenshot](./images/img4.png)
+
+---
+
+## 💡 Notes
+
+- Default Telnet with root access is a major security risk.
+- Always disable unused services and enforce authentication.
+
+---
