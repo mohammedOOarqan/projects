@@ -1,6 +1,6 @@
 # CyberDefenders - [WebStrike]
   
-[the link to the labe](https://cyberdefenders.org/blueteam-ctf-challenges/webstrike/)
+[the link to the lab](https://cyberdefenders.org/blueteam-ctf-challenges/webstrike/)
 
  
 ---
