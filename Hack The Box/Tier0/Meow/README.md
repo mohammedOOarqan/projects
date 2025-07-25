@@ -25,11 +25,11 @@ Misconfiguration in the **Telnet** service allowed unauthenticated login as `roo
 
 1. [Ping to check connectivity](images/img1.png)
 
-2. [Nmap scan reveals open Telnet port](../images/img2.png)
+2. [Nmap scan reveals open Telnet port](images/img2.png)
 
-3. [Telnet login as root (no password)](../images/img3.png)
+3. [Telnet login as root (no password)](images/img3.png)
 
-4. [Flag extraction](../images/img4.png)
+4. [Flag extraction](images/img4.png)
    
 
 ---
