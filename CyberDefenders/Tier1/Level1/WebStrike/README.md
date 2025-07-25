@@ -27,12 +27,3 @@ know the sorce of the attack and the name of the file the attacker was trying to
 4. [scroll in the http request and you will find that one of the post request he was sending was succesfull this is the name of the webshell uploaded](images.img4.png)
 5. [in the same http request in the body you can see the code of the webshell and what ip address and port it is trying to connect to](images.img5.png)
 6. [open the tcp stream of the request from the server on the ip and port listed in the webshell and you will find a code that trying to send the passwd file](images.img6.png)
-
-
-
-## 📚 References
-
-- [MITRE ATT&CK - T1059: Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/)
-- [CyberDefenders Lab](https://cyberdefenders.org/labs/...)
-
----
